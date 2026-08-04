@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg17943"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="Hierarquia_de_classes.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview17945"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.46324355"
+     inkscape:cx="46.411872"
+     inkscape:cy="-1770.1272"
+     inkscape:window-width="1366"
+     inkscape:window-height="696"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs17940">
+    <rect
+       x="-55.887901"
+       y="-1405.9123"
+       width="256.7233"
+       height="102.40583"
+       id="rect120574" />
+    <rect
+       x="68.364476"
+       y="-1377.642"
+       width="424.65704"
+       height="104.87593"
+       id="rect110712" />
+    <rect
+       x="686.63762"
+       y="-2286.854"
+       width="276.60899"
+       height="96.886113"
+       id="rect103959" />
+    <rect
+       x="587.65204"
+       y="-2016.3317"
+       width="295.13007"
+       height="110.03392"
+       id="rect99905" />
+    <rect
+       x="556.66537"
+       y="-1773.8493"
+       width="189.70531"
+       height="75.887705"
+       id="rect93936" />
+    <rect
+       x="303.12793"
+       y="-1617.4035"
+       width="478.49014"
+       height="78.413514"
+       id="rect82322" />
+    <rect
+       x="375.24449"
+       y="-1610.0298"
+       width="163.5794"
+       height="63.73806"
+       id="rect75314" />
+    <rect
+       x="537.95087"
+       y="-2233.8324"
+       width="159.19139"
+       height="92.337563"
+       id="rect68019" />
+    <rect
+       x="333.54066"
+       y="-1927.538"
+       width="327.59847"
+       height="90.702466"
+       id="rect62728" />
+    <rect
+       x="-116.20485"
+       y="-2111.6102"
+       width="254.9222"
+       height="63.795381"
+       id="rect53608" />
+    <rect
+       x="-73.811471"
+       y="-1880.1876"
+       width="267.56723"
+       height="99.043544"
+       id="rect48234" />
+    <rect
+       x="-133.75476"
+       y="-1959.0313"
+       width="132.20129"
+       height="68.482729"
+       id="rect43608" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="81.321214 : 280.83057 : 1"
+       inkscape:vp_y="0 : 589.25577 : 0"
+       inkscape:vp_z="243.63603 : 280.83057 : 1"
+       inkscape:persp3d-origin="162.47857 : 251.66241 : 1"
+       id="perspective39307" />
+    <rect
+       x="-446.46801"
+       y="-1596.8638"
+       width="219.386"
+       height="66.496176"
+       id="rect38403" />
+    <rect
+       x="-449.97668"
+       y="-1921.4615"
+       width="144.20697"
+       height="56.951963"
+       id="rect34965" />
+    <rect
+       x="-813.54185"
+       y="-1716.5946"
+       width="288.36769"
+       height="97.066938"
+       id="rect21205" />
+  </defs>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text21203"
+       style="font-style:normal;font-weight:normal;font-size:64px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect21205);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="-813.54102"
+         y="-1659.9688"
+         id="tspan124125">Figuras:</tspan></text>
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -144.92792,-452.03932 c 109.478471,-83.84469 109.582757,-83.48051 109.582757,-83.48051 m -109.582757,83.48051 100.05581,87.52663"
+       id="path32068" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,77.857221,-31.595399)"
+       id="text34963"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect34965);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="-449.97656"
+         y="-1886.0703"
+         id="tspan124127">2D</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,68.404841,57.076132)"
+       id="text38401"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect38403);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="-446.46875"
+         y="-1561.4727"
+         id="tspan124129">3D
+</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -19.529285,-497.4663 -15.815878,-38.05353 39.5989414,-3.88835"
+       id="path39688" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-1.1957662,15.222501)"
+       id="text43606"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect43608);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="-133.75391"
+         y="-1923.6406"
+         id="tspan124131">Texto</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,47.543764,8.1330335)"
+       id="text53606"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect53608);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="-116.20508"
+         y="-2076.2188"
+         id="tspan124133">Geométrico</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 4.2537784,-539.40818 43.457717,-543.2367"
+       id="path58969" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 43.457717,-543.2367 44.791582,33.24228"
+       id="path59084" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-19.568956,-4.239782)"
+       id="text62726"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect62728);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="333.54102"
+         y="-1892.1465"
+         id="tspan124135">Poligonal
+</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 43.457717,-543.2367 151.07629,-573.20301"
+       id="path63703" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-3.3097571,11.38046)"
+       id="text68017"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect68019);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="537.95117"
+         y="-2198.4414"
+         id="tspan124137">Curvo
+</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.269408px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 88.25536,-509.99238 31.61796,82.58502"
+       id="path68752" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 88.249299,-509.99442 59.035081,40.66347"
+       id="path68754" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,11.60334,-3.1439955)"
+       id="text82320"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect82322);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="303.12891"
+         y="-1582.0137"
+         id="tspan124139">Retângulo
+</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text93934"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect93936);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="556.66602"
+         y="-1738.459"
+         id="tspan124141">Polígono
+</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 205.88077,-599.99654 -54.80448,26.79353 30.25362,43.41846"
+       id="path96789" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text99903"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect99905);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="587.65234"
+         y="-1980.9414"
+         id="tspan124143">Espiral
+</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,13.544545,-2.8558477)"
+       id="text103957"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect103959);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="686.63672"
+         y="-2251.4629"
+         id="tspan124145">Elipse</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -44.87211,-364.5127 62.960211,0.0116"
+       id="path108178" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,15.69446,1.6933122)"
+       id="text120572"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect120574);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="-55.888672"
+         y="-1370.5215"
+         id="tspan124147">Caixa 3D</tspan></text>
+  </g>
+</svg>
