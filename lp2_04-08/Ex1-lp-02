@@ -1,0 +1,42 @@
+Structs correspondentes em C:
+
+typedef struct{
+    //gerais
+    float desfoque; transp;
+    int cor;
+    float, x,y,l,a;    
+    //únicos    
+    int n;
+    float p, arred, random;
+} poligono
+
+typedef struct{
+    float desfoque; transp;
+    int cor;
+    float, x,y,l,a;
+    float angx, angy, ang z;
+}caixa3D
+
+Struct correspondente em Java:
+
+class poligono{
+'   float desfoque; transp;
+    int cor;
+    float, x,y,l,a;
+    int n;
+    float p, arred, random;
+}
+
+class caixa 3D{
+    float desfoque; transp;
+    int cor;
+    float, x,y,l,a;
+    float angx, angy, angz;
+}
+
+Print em c:
+    void print ( poligono* r){
+    printf(
+        "Desfoque e transparência: (%d,%d), cor rgb(%A ESCREVER), posicão (%d, %d), largura e altura:(%d, %d), (%d) de arestas, proporção de raio(%d), arredondamento (%d) e (%d) de aleatório."
+    );
+}
