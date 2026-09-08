@@ -13,32 +13,37 @@ class RGB{
 			this.g =g;
 			this.b = b;
 		}
+	public static void criaCor(RGB rgb){
+		Random rand = new Random();
+		rgb.r = (short) rand.nextInt(255);
+		rgb.g = (short) rand.nextInt(255);
+		rgb.b = (short) rand.nextInt(255);
+	}
 }
+
 //SUPERCLASSE Figure
 abstract class Figure{
 	int x,y;
 	int w,h;
 	RGB cContorno,cFundo;
-	
 	public Figure(){
 		this.cContorno = new RGB((short)0,(short)0,(short)0);
-		this.cFundo = new RGB((short)255,(short)255,(short)255);
+		this.cFundo = new RGB((short)255,(short)255,(short)255);	
 	}
 	
 	abstract void paint(Graphics g);
 		
 	public void drag(KeyEvent evt){
 		if(evt.getKeyCode() == KeyEvent.VK_UP){
-			y= y+1;
-		}else if(evt.getKeyCode() == KeyEvent.VK_DOWN){
 			y= y-1;
+		}else if(evt.getKeyCode() == KeyEvent.VK_DOWN){
+			y= y+1;
 		}else if(evt.getKeyCode() == KeyEvent.VK_RIGHT){
 			x= x+1;
 		}else if(evt.getKeyCode() == KeyEvent.VK_LEFT){
 			x= x-1;	
 		}
 	}
-
 	public boolean contains(int x, int y) {
 		return x >= this.x && x <= (this.x + this.w) && y >= this.y && y <= (this.y + this.h);
 	}
@@ -54,12 +59,6 @@ class Rect extends Figure {
 	
     public void paint (Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
-		Random rand = new Random();
-		cContorno.g = (short) rand.nextInt(255);
-		cContorno.b = (short) rand.nextInt(255);
-		cFundo.r = (short) rand.nextInt(255);
-		cFundo.g = (short) rand.nextInt(255);
-		cFundo.b = (short) rand.nextInt(255);
 		g2d.setColor(new Color(cFundo.r, cFundo.g,cFundo.b));
 		g2d.fillRect(this.x,this.y, this.w,this.h);
 		g2d.setColor(new Color(cContorno.r, cContorno.g,cContorno.b));
@@ -77,12 +76,6 @@ class Ellipse extends Figure {
 
     public void paint (Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
-		Random rand = new Random();
-		cContorno.g = (short) rand.nextInt(255);
-		cContorno.b = (short) rand.nextInt(255);
-		cFundo.r = (short) rand.nextInt(255);
-		cFundo.g = (short) rand.nextInt(255);
-		cFundo.b = (short) rand.nextInt(255);
 		g2d.setColor(new Color(cFundo.r, cFundo.g,cFundo.b));
 		g2d.fill(new Ellipse2D.Double(this.x,this.y, this.w,this.h));
 		g2d.setColor(new Color(cContorno.r, cContorno.g,cContorno.b));
@@ -102,12 +95,6 @@ class Paw extends Figure{
 	public void paint (Graphics g) {
 		int R = Math.min(this.w,this.h);
         Graphics2D g2d = (Graphics2D) g;
-		Random rand = new Random();
-		cContorno.g = (short) rand.nextInt(255);
-		cContorno.b = (short) rand.nextInt(255);
-		cFundo.r = (short) rand.nextInt(255);
-		cFundo.g = (short) rand.nextInt(255);
-		cFundo.b = (short) rand.nextInt(255);
 		g2d.setColor(new Color(cFundo.r, cFundo.g,cFundo.b));
 		g2d.fill(new Ellipse2D.Double(this.x,this.y, this.w,this.h));
 		g2d.setColor(new Color(cContorno.r, cContorno.g,cContorno.b));
@@ -139,17 +126,11 @@ class TV extends Figure{
 TV (int x, int y, int w, int h) {
         this.x = x;
         this.y = y;
-        this.w = Math.max(w,h);
-        this.h = Math.min(w,h);
+        this.w = w;
+        this.h = h;
     }
 	public void paint (Graphics g) {
 		Graphics2D g2d = (Graphics2D) g;
-		Random rand = new Random();
-		cContorno.g = (short) rand.nextInt(255);
-		cContorno.b = (short) rand.nextInt(255);
-		cFundo.r = (short) rand.nextInt(255);
-		cFundo.g = (short) rand.nextInt(255);
-		cFundo.b = (short) rand.nextInt(255);
 		g2d.setColor(new Color(cFundo.r, cFundo.g,cFundo.b));
 		g2d.fillRect(this.x,this.y, this.w,this.h);
 		g2d.setColor(new Color(cContorno.r, cContorno.g,cContorno.b));
@@ -181,11 +162,11 @@ TV (int x, int y, int w, int h) {
     }
 
 }
-//LISTA
+//LISTA e JANELA
 class ListFrame extends JFrame {
     ArrayList<Figure> figs = new ArrayList<Figure>();
     Random rand = new Random();
-
+	
     ListFrame () {
         this.addWindowListener (
             new WindowAdapter() {
@@ -194,25 +175,39 @@ class ListFrame extends JFrame {
                 }
             }
         );
-//CRIAÇÃO
+		//Integracao de classes
+		FFig ffig;
+		ffig = new FFig(this.figs, this);
+		this.addMouseListener(ffig);
+//CRIAÇÃO e EVENT LISTENER-TECLADO
         this.addKeyListener (
             new KeyAdapter() {
                 public void keyPressed (KeyEvent evt) {
                     int x = rand.nextInt(750);
                     int y = rand.nextInt(750);
-                    int w = 200+ rand.nextInt(250);
-                    int h = 200+ rand.nextInt(250);
+                    int w = 50+ rand.nextInt(550);
+                    int h = 50+ rand.nextInt(550);
                     if (evt.getKeyChar() == 'r') {
                         Rect r = new Rect(x,y, w,h);
+						RGB.criaCor(r.cFundo);
                         figs.add(r);
                     } else if (evt.getKeyChar() == 'e') {
-                        figs.add(new Ellipse(x,y, w,h));
+                        Ellipse e = new Ellipse(x,y, w,h);
+						RGB.criaCor(e.cFundo);
+						figs.add(e);
                     }
 					  else if (evt.getKeyChar()== 'p'){
-						  figs.add(new Paw(x,y,w,h));
+						Paw p = new Paw(x,y,w,h);
+						RGB.criaCor(p.cFundo);
+						figs.add(p);
 					  }
 					  else if(evt.getKeyChar() == 't'){
-						  figs.add(new TV(x,y,w,h));
+						TV t = new TV(x,y,w,h);
+						RGB.criaCor(t.cFundo);
+						figs.add(t);
+					  }
+					  else {
+					ffig.keyFocusPressed(evt);
 					  }
                     repaint();
                 }
@@ -234,34 +229,23 @@ class ListFrame extends JFrame {
 //FOCO
 class FFig implements MouseListener{
 	private Figure focus = null;
-
+	private int lastMouseX;
+    private int lastMouseY;
+	
 	//Referência ao array principal para acessar foco
 	private ArrayList<Figure> figs;
 	private ListFrame listFrame;
-	
+//funções de interacao com foco.
 	public FFig(ArrayList<Figure> figs, ListFrame listFrame){
 		this.figs =figs;
 		this.listFrame = listFrame;
 	}
-	
-	public void mousePressed(MouseEvent evt){
-	for(Figure fig: figs){
-		if(fig.contains(evt.getX(),evt.getY())){
-			focus=fig;
-			
-			break;
-		}
-	}
-	if (focus!= null){
-	focus.cContorno= new RGB((short)255, (short)0, (short)0);
-	}
-	}
-	public void keyFocusPressed(KeyEvent kEvt, MouseEvent evt){
+		public void keyFocusPressed(KeyEvent kEvt){
 		if(focus != null){
 			focus.drag(kEvt);
 			if(kEvt.getKeyChar()=='d'){
-				focus.x= evt.getX();
-				focus.y=evt.getY();
+				focus.x= lastMouseX;
+				focus.y=lastMouseY;
 			}	
 			}
 			if (kEvt.getKeyChar() == 'x'){
@@ -269,21 +253,46 @@ class FFig implements MouseListener{
 				focus = null;
 			}
 			if(kEvt.getKeyChar()=='a'){
-				if (evt.getButton() == MouseEvent.BUTTON1){
-					focus.w = evt.getX() -focus.x;
-					if (focus.w<0){
-						focus.w= -1*focus.w;
-					}
-				}
-				else if (evt.getButton() == MouseEvent.BUTTON3){
-					focus.h= evt.getY()- focus.y;
-					if (focus.h<0){
-						focus.h=-1*focus.h;
-					}
-				}
+				focus.w = Math.abs(lastMouseX -focus.x);
+				focus.h = Math.abs(lastMouseY- focus.y);
+			}
+			if(kEvt.getKeyChar()=='g'){
+					//tira o vermelho ao sair do foco
+				focus.cContorno = new RGB((short)0,(short)0,(short)0);	
+				//coloca novo foco no topo de vermelho
+				focus = figs.get(0);
+				figs.remove(focus);
+				figs.add(focus);
+				focus.cContorno = new RGB((short)255,(short)0,(short)0);
+				listFrame.repaint(); 
 			}
 			listFrame.repaint(); 
 		}
+	//figura(do topo) é selecionada
+	public void mousePressed(MouseEvent evt){
+		//tira o vermelho ao sair do foco
+		if(focus!= null){
+			focus.cContorno = new RGB((short)0,(short)0,(short)0);
+		}
+		//procura novo foco
+		for (int i = figs.size() - 1; i >= 0; i--) {
+            Figure fig = figs.get(i);
+			lastMouseX= evt.getX();
+			lastMouseY= evt.getY();
+			if (fig.contains(evt.getX(), evt.getY())) {
+                focus = fig;
+                break;
+            }
+        }
+	//foco vai pro topo com contorno vermelho
+	if (focus!= null){
+		figs.remove(focus);
+		figs.add(focus);
+		focus.cContorno = new RGB((short)255,(short)0,(short)0);
+		listFrame.repaint(); 
+	}
+	}
+	
 	public void mouseReleased(MouseEvent evt) {
     }
 
@@ -297,7 +306,7 @@ class FFig implements MouseListener{
     }
 	}
 //MAIN
-class ListApp {
+class DemoApp {
     public static void main (String[] args) {
 		//cria quadro
         ListFrame frame = new ListFrame();
